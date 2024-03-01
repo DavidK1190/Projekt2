@@ -1,0 +1,46 @@
+@media (max-width: 600px) {
+  header nav {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    display: none;
+    background-color: var(--clr-blue);
+    background-image: linear-gradient(
+      100deg,
+      var(--clr-grey) -75%,
+      var(--clr-blue) 100%
+    );
+  }
+  .header-about-container nav {
+    background-color: var(--clr-green);
+    background-image: linear-gradient(
+      100deg,
+      var(--clr-green) 0%,
+      var(--clr-blue) 100%
+    );
+  }
+  .header-contact-container nav {
+    background-color: var(--clr-blue);
+    background-image: linear-gradient(
+      100deg,
+      var(--clr-grey) 0%,
+      var(--clr-blue) 100%
+    );
+  }
+  header nav li {
+    display: block;
+    text-align: center;
+    margin: 10px 10px;
+  }
+  .menu-icon {
+    display: block;
+    color: var(--clr-white);
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 600px) {
+  header nav {
+    display: block !important;
+  }
+}

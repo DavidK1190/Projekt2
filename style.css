@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /**** Colors ****/
+
+  --clr-white: #fff;
+  --clr-blue: #15304c;
+  --clr-gold: #f0e68c;
+  --clr-grey: #696969;
+  --clr-green: #1b4d3e;
+}
+
+/**** Header Kontejnery pro každou stránku ****/
+.header-index-container,
+.header-about-container,
+.header-contact-container {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background-color: var(--clr-blue);
+  background-image: linear-gradient(
+    160deg,
+    var(--clr-grey) -75%,
+    var(--clr-blue) 100%
+  );
+}
+
+/**** Změna barvy hlavičky ****/
+.header-about-container {
+  background-color: var(--clr-green);
+  background-image: linear-gradient(
+    160deg,
+    var(--clr-green) 0%,
+    var(--clr-blue) 100%
+  );
+}
+.header-contact-container {
+  background-color: var(--clr-blue);
+  background-image: linear-gradient(
+    160deg,
+    var(--clr-grey) 0%,
+    var(--clr-blue) 100%
+  );
+}
+
+/**** Vlastnosti loga ****/
+.header-index-container .logo,
+.header-about-container .logo,
+.header-contact-container .logo {
+  flex-grow: 1;
+}
+.header-index-container .logo img,
+.header-about-container .logo img,
+.header-contact-container .logo img {
+  margin-left: 20px;
+  width: 200px;
+}
+
+/**** Navigace stránky ****/
+
+nav {
+  margin-right: 30px;
+}
+
+nav ul li {
+  margin-right: 20px;
+  display: inline-block;
+  list-style: none;
+}
+
+nav ul a {
+  color: var(--clr-white);
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  color: var(--clr-gold);
+}
+
+.menu-icon {
+  margin-right: 30px;
+  display: none;
+}
+
+/**** Welcome Section ****/
+.welcome {
+  background: url(img/background.webp);
+  height: calc(100vh - 90px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome-about-container {
+  background: url(img/bradavice2.jpg);
+  height: calc(100vh - 90px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.welcome-contact-container {
+  background: url(img/bradavice3.jpg);
+  height: calc(100vh - 90px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/**** Záhlaví stránek ****/
+
+footer,
+.footer-about-container,
+.footer-contact-container {
+  height: 20px;
+  text-align: center;
+  color: var(--clr-white);
+  background-color: var(--clr-blue);
+  background-image: linear-gradient(
+    160deg,
+    var(--clr-grey) -75%,
+    var(--clr-blue) 100%
+  );
+}
+.footer-about-container {
+  background-color: var(--clr-green);
+  background-image: linear-gradient(
+    160deg,
+    var(--clr-green) 0%,
+    var(--clr-blue) 100%
+  );
+}
+.footer-contact-container {
+  background-color: var(--clr-blue);
+  background-image: linear-gradient(
+    160deg,
+    var(--clr-grey) 0%,
+    var(--clr-blue) 100%
+  );
+}
